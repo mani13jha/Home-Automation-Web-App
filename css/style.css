@@ -1,0 +1,271 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #111;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: 0.3s;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+  color: red;
+}
+
+@media screen and (max-width: 700px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.header {
+  text-align: center;
+}
+
+.room {
+  text-align: center;
+  display: inline-block;
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 1.5%;
+  color: white;
+  margin-right: 1%;
+  transition: 0.4s;
+}
+
+.room:hover {
+  box-shadow: 2px 4px 10px white;
+  border: 2px solid brown;
+  background-color: red;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+.row {
+  margin: 0 -5px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 850px) {
+  .column {
+    width: 50%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.card {
+  margin: 5% 1%;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  height: 300px;
+  transition: 0.4s;
+}
+
+.column p {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.sunlight {
+  border: 4px solid rgb(255, 204, 0);
+  text-shadow: 4px 8px 10px rgb(255, 204, 0);
+}
+
+.sunlight:hover {
+  box-shadow: 4px 8px 10px rgb(255, 204, 0);
+}
+
+.temperature {
+  border: 4px solid #ff471a;
+  text-shadow: 4px 8px 10px #ff471a;
+}
+
+.temperature:hover {
+  box-shadow: 4px 8px 10px #ff471a;
+}
+
+.humidity {
+  border: 4px solid #4db8ff;
+  text-shadow: 4px 8px 10px #4db8ff;
+}
+
+.humidity:hover {
+  box-shadow: 4px 8px 10px #4db8ff;
+}
+
+.heat_index {
+  border: 4px solid #f60;
+  text-shadow: 4px 8px 10px #ff6600;
+}
+
+.heat_index:hover {
+  box-shadow: 4px 8px 10px #f60;
+}
+
+.door,
+.appliance {
+  text-align: center;
+  display: inline-block;
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 1.5%;
+  color: white;
+  transition: 0.4s;
+}
+
+.door:hover,
+.appliance:hover {
+  box-shadow: 2px 4px 10px white;
+  border: 2px solid brown;
+  background-color: red;
+}
+
+.column2 {
+  float: left;
+  width: 20%;
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .column2 {
+    width: 50%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .column2 {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.card2 {
+  margin: 5% 1%;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  height: 300px;
+  border: 3px solid red;
+  text-shadow: 4px 8px 10px #333;
+  transition: 0.4s;
+}
+
+.card2:hover {
+  box-shadow: 4px 8px 10px #f1f1f1;
+}
+
+.column2 p {
+  font-size: 20px;
+  font-style: italic;
+}
+
+button {
+  font-size: 20px;
+  cursor: pointer;
+  margin: 5px;
+  outline: none;
+  width: 40%;
+  padding: 2%;
+  border: 2px solid black;
+  border-radius: 7px;
+  transition: 0.3s;
+}
+
+.on:active {
+  background-color: green;
+  transform: translateY(5px);
+}
+
+.off:active {
+  background-color: red;
+  transform: translateY(5px);
+}
+
+.on {
+  background-color: rgb(83, 255, 83);
+}
+
+.on:hover {
+  box-shadow: 2px 4px 6px red; 
+}
+
+.off {
+  background-color: rgb(243, 95, 95);
+}
+
+.off:hover {
+  box-shadow: 2px 4px 6px green;
+}

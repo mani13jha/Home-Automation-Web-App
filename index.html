@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+      <title>Home Automation</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="icon" href="https://img.icons8.com/fluency/48/000000/home-automation.png" type="image/x-icon">
+      <script type= "module" src="javascript/script.js"></script>
+      <script>
+            function  myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            }
+            else {
+                x.className = "topnav";
+            }
+          }
+      </script>
+      
+
+    </head>
+
+    <body>
+      <div class="topnav" id="myTopnav">
+        <a class="header"><i class="fa fa-home"></i>Home Automation</a>
+        <a href="#sensor_monitoring" class="active"><i class="fa fa-"></i>Room Sensors</a>
+        <a href="#door data">Door Data</a>
+        <a href="#appliance control">Appliances Control</a>
+        <a href="javascript:void(0)" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+      </div>
+
+      <div class="header">
+        <h1 class="room" id="room data"><img src="https://img.icons8.com/fluency/48/000000/home-automation.png">Room Environment Monitoring</h1>
+      </div>
+
+      <div class="row">
+
+        <div class="column">
+          <div class="sunlight card">
+            <h2>Sunlight Intensity</h2>
+            <p><img src="https://img.icons8.com/fluency/48/000000/sun.png"/></p>
+            <hr>
+            <p id="intensity">206</p>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="temperature card">
+            <h2>Temperature</h2>
+            <p><img src="https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/64/000000/external-temperature-laundry-icongeek26-linear-colour-icongeek26.png"/></p>
+            <hr>
+            <p id="temp_c">20 °C</p>
+            <p id="temp_f">20 °F</p>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="humidity card">
+            <h2>Humidity</h2>
+            <p><img src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-humidity-weather-justicon-flat-justicon.png"/></p>
+            <hr>
+            <p id="humid">20%</p>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="heat_index card">
+            <h2>Heat Index</h2>
+            <p><img src="https://img.icons8.com/external-wanicon-flat-wanicon/64/000000/external-temperature-nature-wanicon-flat-wanicon.png"/></p>
+            <hr>
+            <p id="heat_index_c">20 °C</p>
+            <p id="heat_index_f">20 °F</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="header">
+        <h1 class="door" id="door data">Door Data</h1>
+      </div>
+
+      <div class="row">
+
+        <div class="column2">
+          <div class="bell card2">
+            <h2>Door Bell</h2>
+            <p><img src="https://img.icons8.com/emoji/48/000000/bell-emoji.png"/></p>
+            <hr>
+            <p id="bell1">No one's at the door</p>
+          </div>
+        </div>
+
+        <div class=" column2">
+          <div class="person card2">
+            <h2>Entered Person Name</h2>
+            <p><img src="https://img.icons8.com/color/48/000000/person-male.png"/></p>
+            <hr>
+            <p id="name1">Prapti</p>
+          </div>
+        </div>
+
+        <div class="column2">
+          <div class="id card2">
+            <h2>Entered Person ID</h2>
+            <p><img src="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/64/000000/external-id-card-business-and-management-kiranshastry-lineal-color-kiranshastry-4.png"/></p>
+            <hr>
+            <p id="id1">4068675</p>
+          </div>
+        </div>
+
+        <div class="column2">
+          <div class="access card2">
+            <h2>Access</h2>
+            <p><img id="access_img" src="https://img.icons8.com/fluency/48/000000/approval.png"/></p>
+            <hr>
+            <p id="access1">Granted</p>
+          </div>
+        </div>
+
+        <div class="column2">
+          <div class="status card2">
+            <h2>Status</h2>
+            <p><img id="status_img" src="https://img.icons8.com/doodle/48/000000/enter-house.png"/></p>
+            <hr>
+            <p id="status1">Entered</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="header">
+        <h1 class="appliance" id="appliance control">Appliance Control<h1>
+      </div>
+
+      <div class="row">
+
+        <div class="column2">
+          <div class="led card2">
+            <h2>LED Bulb</h2>
+            <p><img src="https://img.icons8.com/external-berkahicon-lineal-color-berkahicon/64/000000/external-led-lamp-save-earth-berkahicon-lineal-color-berkahicon.png"/></p>
+            <hr>
+            <button type="button" class="on" id="led_on">ON</button>
+            <button type="button" class="off" id="led_off">OFF</button>
+          </div>
+        </div>
+
+        <div class="column2">
+          <div class="fan card2">
+            <h2>Fan</h2>
+            <p><img src="https://img.icons8.com/external-itim2101-lineal-color-itim2101/64/000000/external-fan-household-equipment-itim2101-lineal-color-itim2101.png"/></p>
+            <hr>
+            <button type="button" class="on" id="fan_on">ON</button>
+            <button type="button" class="off" id="fan_off">OFF</button>
+          </div>
+        </div>
+
+        <div class=" column2">
+          <div class="tv card2">
+            <h2>TV</h2>
+            <p><img src="https://img.icons8.com/external-icongeek26-outline-colour-icongeek26/64/000000/external-tv-music-icongeek26-outline-colour-icongeek26.png"/></p>
+            <hr>
+            <button type="button" class="on" id="tv_on">ON</button>
+            <button type="button" class="off" id="tv_off">OFF</button>
+          </div>
+        </div>
+
+        <div class=" column2">
+          <div class="fridge card2">
+            <h2>Fridge</h2>
+            <p><img src="https://img.icons8.com/nolan/64/fridge.png"/></p>
+            <hr>
+            <button type="button" class="on" id="fridge_on">ON</button>
+            <button type="button" class="off" id="fridge_off">OFF</button>
+          </div>
+        </div>
+
+        <div class="column2">
+          <div class="ac card2">
+            <h2>AC</h2>
+            <p><img src="https://img.icons8.com/external-icongeek26-outline-colour-icongeek26/64/000000/external-ac-home-appliances-icongeek26-outline-colour-icongeek26.png"/></p>
+            <hr>
+            <button type="button" class="on" id="ac_on">ON</button>
+            <button type="button" class="off" id="ac_off">OFF</button>
+          </div>
+        </div>
+      </div>
+    </body>
+
+</html>
